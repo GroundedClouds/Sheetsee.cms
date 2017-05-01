@@ -8,7 +8,7 @@
 
 # THANKS
 
-    <name>
+    Jonathan Verrecchia
 
 # TECHNOLOGY COLOPHON
 

@@ -9,6 +9,10 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,400italic|Source+Code+Pro:400' rel='stylesheet' type='text/css'>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+        <script type='text/javascript' src='../js/sheetsee.js'></script>
+        <link rel='stylesheet' type='text/css' href='../assets/style.css'>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -55,7 +59,15 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Hello, world!</h1>
+
+        <script id="fullTable_template" type="text/html">
+              <table>
+                  {{#rows}}
+                    <tr><td>{{Title}}</td></tr>
+                  {{/rows}}
+              </table>
+            </script>
+
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
       </div>
@@ -75,9 +87,13 @@
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <script id="fullTable_template" type="text/html">
+            <table>
+                {{#rows}}
+                  <tr><td>{{Title}}</td></tr>
+                {{/rows}}
+            </table>
+          </script>
         </div>
       </div>
 
@@ -102,7 +118,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- Google Sheets url: change 1wejQgxGhxPNnhaXmre7Uhqxv9HGhtDoWX-6aq-yLTQ0 to match your pdf. -->
         <script type="text/javascript">
           document.addEventListener('DOMContentLoaded', function() {
             var URL = "1wejQgxGhxPNnhaXmre7Uhqxv9HGhtDoWX-6aq-yLTQ0"
